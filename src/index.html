@@ -3,34 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Centered Button Page</title>
+    <title>Eugene Puzanov</title>
     <style>
-      body,
-      html {
-        height: 100%;
+      body {
         margin: 0;
+        padding: 0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        background-color: #87ceeb; /* Light Sky Blue Background */
+        justify-content: center;
+        height: 100vh;
         font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
       }
+
+      .name {
+        font-size: 48px;
+        color: #333;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .button-container {
+        display: flex;
+        gap: 15px;
+      }
+
       button {
-        padding: 30px 60px;
-        font-size: 30px;
-        background-color: #007bff;
-        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
         cursor: pointer;
+        background-color: #4caf50;
+        color: white;
         transition: background-color 0.3s;
       }
+
       button:hover {
-        background-color: #0056b3;
+        background-color: #45a049;
+      }
+
+      .secondary {
+        background-color: #008cba;
+      }
+
+      .secondary:hover {
+        background-color: #007b9a;
       }
     </style>
   </head>
   <body>
-    <button></button>
+    <div class="name">Eugene Puzanov</div>
+    <div class="button-container">
+      <button>Home</button>
+      <button class="secondary">About</button>
+      <button>Contact</button>
+    </div>
   </body>
 </html>
